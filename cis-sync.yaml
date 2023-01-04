@@ -1,0 +1,12 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: bank-of-anthos
+spec:
+  git:
+    auth: none
+    branch: main
+    dir: bundles/policy-essentials-v2022
+    repo: 'https://github.com/GoogleCloudPlatform/acm-policy-controller-library'
+  sourceFormat: unstructured
