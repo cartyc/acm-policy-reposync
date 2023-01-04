@@ -1,8 +1,8 @@
 apiVersion: configsync.gke.io/v1beta1
 kind: RepoSync
 metadata:
-  name: repo-sync
-  namespace: bank-of-anthos
+  name: repo-sync-cis
+  namespace: config-management-system
 spec:
   git:
     auth: none
@@ -10,3 +10,55 @@ spec:
     dir: bundles/policy-essentials-v2022
     repo: 'https://github.com/GoogleCloudPlatform/acm-policy-controller-library'
   sourceFormat: unstructured
+---
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: repo-sync-policy-essentials
+  namespace: config-management-system
+spec:
+  git:
+    auth: none
+    branch: main
+    dir: bundles/policy-essentials-v2022
+    repo: 'https://github.com/GoogleCloudPlatform/acm-policy-controller-library'
+  sourceFormat: unstructured
+---
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: repo-sync-pss-baseline
+  namespace: config-management-system
+spec:
+  git:
+    auth: none
+    branch: main
+    dir: bundles/pss-baseline-v2022
+    repo: 'https://github.com/GoogleCloudPlatform/acm-policy-controller-library'
+  sourceFormat: unstructured
+---
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: repo-sync-psp
+  namespace: config-management-system
+spec:
+  git:
+    auth: none
+    branch: main
+    dir: bundles/psp-v2022
+    repo: 'https://github.com/GoogleCloudPlatform/acm-policy-controller-library'
+  sourceFormat: unstructured
+---
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: repo-sync-asm
+  namespace: config-management-system
+spec:
+  git:
+    auth: none
+    branch: main
+    dir: bundles/asm-policy-v0.0.1
+    repo: 'https://github.com/GoogleCloudPlatform/acm-policy-controller-library'
+  sourceFormat: unstructured  
