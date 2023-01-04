@@ -2,7 +2,7 @@ apiVersion: configsync.gke.io/v1beta1
 kind: RepoSync
 metadata:
   name: repo-sync-cis
-  namespace: config-management-system
+  namespace: policy
 spec:
   git:
     auth: none
@@ -15,7 +15,7 @@ apiVersion: configsync.gke.io/v1beta1
 kind: RepoSync
 metadata:
   name: repo-sync-policy-essentials
-  namespace: config-management-system
+  namespace: policy
 spec:
   git:
     auth: none
@@ -28,7 +28,7 @@ apiVersion: configsync.gke.io/v1beta1
 kind: RepoSync
 metadata:
   name: repo-sync-pss-baseline
-  namespace: config-management-system
+  namespace: policy
 spec:
   git:
     auth: none
@@ -41,7 +41,7 @@ apiVersion: configsync.gke.io/v1beta1
 kind: RepoSync
 metadata:
   name: repo-sync-psp
-  namespace: config-management-system
+  namespace: policy
 spec:
   git:
     auth: none
@@ -54,7 +54,7 @@ apiVersion: configsync.gke.io/v1beta1
 kind: RepoSync
 metadata:
   name: repo-sync-asm
-  namespace: config-management-system
+  namespace: policy
 spec:
   git:
     auth: none
