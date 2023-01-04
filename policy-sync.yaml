@@ -7,7 +7,7 @@ spec:
   git:
     auth: none
     branch: main
-    dir: bundles/policy-essentials-v2022
+    dir: bundles/cis-k8s-v1.5.1
     repo: 'https://github.com/GoogleCloudPlatform/acm-policy-controller-library'
   sourceFormat: unstructured
 ---
