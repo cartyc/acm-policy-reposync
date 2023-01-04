@@ -1,8 +1,8 @@
 apiVersion: configsync.gke.io/v1beta1
-kind: RepoSync
+kind: RootSync
 metadata:
   name: repo-sync-cis
-  namespace: policy
+  namespace: config-management-system
 spec:
   git:
     auth: none
@@ -12,10 +12,10 @@ spec:
   sourceFormat: unstructured
 ---
 apiVersion: configsync.gke.io/v1beta1
-kind: RepoSync
+kind: RootSync
 metadata:
   name: repo-sync-policy-essentials
-  namespace: policy
+  namespace: config-management-system
 spec:
   git:
     auth: none
@@ -25,10 +25,10 @@ spec:
   sourceFormat: unstructured
 ---
 apiVersion: configsync.gke.io/v1beta1
-kind: RepoSync
+kind: RootSync
 metadata:
   name: repo-sync-pss-baseline
-  namespace: policy
+  namespace: config-management-system
 spec:
   git:
     auth: none
@@ -38,10 +38,10 @@ spec:
   sourceFormat: unstructured
 ---
 apiVersion: configsync.gke.io/v1beta1
-kind: RepoSync
+kind: RootSync
 metadata:
   name: repo-sync-psp
-  namespace: policy
+  namespace: config-management-system
 spec:
   git:
     auth: none
@@ -51,10 +51,10 @@ spec:
   sourceFormat: unstructured
 ---
 apiVersion: configsync.gke.io/v1beta1
-kind: RepoSync
+kind: RootSync
 metadata:
   name: repo-sync-asm
-  namespace: policy
+  namespace: config-management-system
 spec:
   git:
     auth: none
