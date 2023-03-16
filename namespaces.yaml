@@ -5,4 +5,5 @@ metadata:
     mesh.cloud.google.com/proxy: '{"managed": true}'
   labels:
     istio-injection: enabled
+    admission.gatekeeper.sh/ignore: true
   name: bank-of-anthos
