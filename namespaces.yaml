@@ -7,3 +7,12 @@ metadata:
     istio-injection: enabled
     admission.gatekeeper.sh/ignore: "true"
   name: bank-of-anthos
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    mesh.cloud.google.com/proxy: '{"managed": true}'
+  labels:
+    istio-injection: enabled
+  name: test
