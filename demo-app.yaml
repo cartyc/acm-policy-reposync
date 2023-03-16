@@ -18,7 +18,7 @@ metadata:
   namespace: bank-of-anthos
 subjects:
 - kind: ServiceAccount
-  name: https://g.co/cloud/acm-errors#knv2013
+  name: ns-reconciler-bank-of-anthos-repo-sync-demo-app-18
   namespace: config-management-system
 roleRef:
   kind: Role
