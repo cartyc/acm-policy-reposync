@@ -7,7 +7,7 @@ spec:
   git:
     auth: none
     branch: main
-    dir: bank-of-anthos/
+    dir: .
     repo: 'https://github.com/cartyc/multi-cluster-app'
   sourceFormat: unstructured
 ---
