@@ -21,6 +21,6 @@ subjects:
   name: ns-reconciler-bank-of-anthos-repo-sync-demo-app-18
   namespace: config-management-system
 roleRef:
-  kind: Role
+  kind: ClusterRole
   name: Admin
   apiGroup: rbac.authorization.k8s.io
