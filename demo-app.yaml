@@ -2,7 +2,7 @@ apiVersion: configsync.gke.io/v1beta1
 kind: RepoSync
 metadata:
   name: repo-sync-demo-app
-  namespace: config-management-system
+  namespace: bank-of-anthos
 spec:
   git:
     auth: none
