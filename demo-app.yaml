@@ -1,0 +1,12 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: repo-sync-demo-app
+  namespace: config-management-system
+spec:
+  git:
+    auth: none
+    branch: main
+    dir: bank-of-anthos/
+    repo: 'https://github.com/cartyc/multi-cluster-app'
+  sourceFormat: unstructured
